@@ -1,0 +1,16 @@
+The DIP in SOLID principles stands for the Dependency Inversion Principle. It is one of the key principles in object-oriented design and software engineering, aimed at reducing the coupling between high-level modules and low-level modules.
+
+Definition of DIP:
+High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.
+
+What it Means:
+High-Level Modules: These are modules that contain complex logic and high-level policies.
+Low-Level Modules: These are modules that deal with specific implementations and details.
+Abstractions: Interfaces or abstract classes that define the common behavior but do not provide implementation details.
+By following DIP, you ensure that high-level modules (which contain business logic) do not depend directly on low-level modules (which handle specific details).
+Instead, both should depend on abstractions, which allows for greater flexibility and easier maintenance.
+
+Why DIP Matters:
+Reduces Coupling: By relying on abstractions, you reduce the dependencies between high-level and low-level components, which makes your system more modular and easier to understand.
+Enhances Flexibility: Changes in low-level modules have less impact on high-level modules, making it easier to update or replace parts of the system without affecting others.
+Improves Testability: You can mock or stub abstractions in unit tests, making it easier to test high-level logic independently of low-level details.
